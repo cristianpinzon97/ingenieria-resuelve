@@ -9,11 +9,11 @@ import lombok.Setter;
 public class Jugador {
     private String nombre;
     private String nivel;
-    private Long goles;
-    private Long sueldo;
-    private Long bono;
+    private Integer goles;
+    private Integer sueldo;
+    private Integer bono;
     @JsonProperty(value = "sueldo_completo")
-    private Long sueldoCompleto;
+    private Integer sueldoCompleto;
     private String equipo;
 
 }
