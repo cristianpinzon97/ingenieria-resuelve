@@ -22,7 +22,10 @@ class TeamSalaryControllerTest {
 
 
 	@Test
-	void testCalculatingSalary() throws Exception {
+	/**
+	 * test for calculating salaries of resuelve FC
+	 */
+	void testCalculateSalary() throws Exception {
 		ObjectMapper objectMapper = new ObjectMapper();
 		Equipo team = objectMapper.readValue(Constant.TEAM_TEST, Equipo.class);
 		mockMvc.perform( MockMvcRequestBuilders

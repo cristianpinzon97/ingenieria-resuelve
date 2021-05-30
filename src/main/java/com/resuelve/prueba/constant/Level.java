@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Getter
+/**
+ * Constant to manage the levels of a team
+ */
 public class Level {
 
     // Declaring the static map

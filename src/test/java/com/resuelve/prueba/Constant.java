@@ -1,5 +1,8 @@
 package com.resuelve.prueba;
 
+/**
+ * Constant for testing an resulting
+ */
 public class Constant {
 
     public static final String TEAM_TEST = "{\n" +

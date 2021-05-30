@@ -7,6 +7,10 @@ import java.util.List;
 
 @Getter
 @Setter
+/**
+ * DTO for equipo
+ *
+ */
 public class Equipo {
     private List<Jugador> jugadores;
 

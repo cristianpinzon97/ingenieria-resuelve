@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Rest Controller for managing team salaries
+ */
 @RestController
 @RequestMapping(value = "/v1/resuelve-fc/salaries")
 public class TeamSalaryController {
@@ -17,6 +20,11 @@ public class TeamSalaryController {
     TeamSalaryService teamSalaryService;
 
     @PostMapping()
+    /**
+     * Post method for calculating team salary
+     * @param team that the salary will be calculated
+     * @Return team with
+     */
     public ResponseEntity<Equipo> calculateTeamSalary(@RequestBody Equipo team){
         return ResponseEntity.ok(this.teamSalaryService.calculateSalary(team));
     }

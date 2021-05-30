@@ -6,6 +6,9 @@ import lombok.Setter;
 
 @Getter
 @Setter
+/**
+ * DTO for Jugador
+ */
 public class Jugador {
     private String nombre;
     private String nivel;
