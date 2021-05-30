@@ -21,10 +21,10 @@ class TeamSalaryControllerTest {
 
 
 
-	@Test
 	/**
 	 * test for calculating salaries of resuelve FC
 	 */
+	@Test
 	void testCalculateSalary() throws Exception {
 		ObjectMapper objectMapper = new ObjectMapper();
 		Equipo team = objectMapper.readValue(Constant.TEAM_TEST, Equipo.class);

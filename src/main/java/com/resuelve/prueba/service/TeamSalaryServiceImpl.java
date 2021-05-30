@@ -11,10 +11,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Component
 /**
  * Service Implementation for {@link TeamSalaryService}
  */
+@Component
 public class TeamSalaryServiceImpl implements TeamSalaryService {
 
     private Map<String, List<Jugador>> playersByTeams;
@@ -24,12 +24,12 @@ public class TeamSalaryServiceImpl implements TeamSalaryService {
     private Map<String,Double> totalGoalsByTeams;
 
 
-    @Override
     /**
      * Calculates the salary of a Team
      * @param team that the salary will be calculated
      * @return the same team but with the salary calculated
      */
+    @Override
     public Equipo calculateSalary(Equipo team) {
         orderPlayersByTeam(team);
 

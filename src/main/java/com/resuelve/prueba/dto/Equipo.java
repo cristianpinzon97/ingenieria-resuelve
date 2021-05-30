@@ -5,12 +5,12 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
 /**
  * DTO for equipo
  *
  */
+@Getter
+@Setter
 public class Equipo {
     private List<Jugador> jugadores;
 

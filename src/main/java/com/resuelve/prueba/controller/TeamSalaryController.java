@@ -19,12 +19,13 @@ public class TeamSalaryController {
     @Autowired
     TeamSalaryService teamSalaryService;
 
-    @PostMapping()
+
     /**
      * Post method for calculating team salary
      * @param team that the salary will be calculated
-     * @Return team with
+     * @return team with the salary calculated
      */
+    @PostMapping()
     public ResponseEntity<Equipo> calculateTeamSalary(@RequestBody Equipo team){
         return ResponseEntity.ok(this.teamSalaryService.calculateSalary(team));
     }
